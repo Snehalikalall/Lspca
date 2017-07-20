@@ -3,8 +3,7 @@ library(svd)
 library(dplyr)
 library(plyr)
 
-# Input raw dataset
-data <- read.csv("rawdata.csv", header=FALSE)
+
 # Pre-Processing Section (Normalization )
 normalize_by_umi_2 <-function(x) {
   mat  = x
@@ -14,7 +13,6 @@ normalize_by_umi_2 <-function(x) {
   
   x_filt<-mat[,x_use_genes]
   gene_symbols = gene_symbols[x_use_genes]
-  print(dim(x_filt))
   rs<-rowSums(x_filt)
   rs_med<-median(rs)
   x_norm<-x_filt/(rs/rs_med)
@@ -39,7 +37,7 @@ get_variable_gene<-function(m) {
 }
 
 # Do Pre-processing( Normalization and Gene selection).   
-datan<-t(data)    
+datan<-t(Data)    
 l<-normalize_by_umi_2(datan)
 datanormal<-l$m
 
@@ -55,4 +53,4 @@ df$used<-df$dispersion_norm >= disp_cut_off
 top_features = head(order(-df$dispersion_norm),ngenes_keep)
 datatopfea<-datanormal[,top_features]
 datafiltfinal<-log2(abs(datatopfea+1))
-write.table(datafiltfinal,file="PreProcesseddata.csv",sep=",",row.names = FALSE,col.names = FALSE)
+write.table(datafiltfinal,file="data/PreProcesseddata.csv",sep=",",row.names = FALSE,col.names = FALSE)

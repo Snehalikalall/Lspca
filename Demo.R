@@ -1,19 +1,12 @@
 # Run the demo code, We have given a normalized PBMC data as example Or put the normalized final data here
-#Set the path of your folder
-#setwd("/home/Desktop")
 
 
+# Load the Raw data to prerprocess, if needed
+#Data<- read.csv("data/Rawdata.csv", header=FALSE)
 #Calling the Preprocess R code if tehre is Raw dataset
-#source("PreProcess.R)
+#source("/src/PreProcess.R)
 
-#Calling Python Script
-system("python LSPCA.py 5",intern=T)
 
-# Calling PCA R Code
-source("src/PCA.R")
+# Calling main R Code
+source("src/main.R")
 
-# Calling Projection R code
-source("src/Projection.R")
-
-# Calling Plot Function
-source("src/plot.R")

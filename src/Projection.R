@@ -1,6 +1,0 @@
-Data_Eigen<- read.csv("pceigen.csv", header=FALSE)
-Data<- read.csv("PreProcesseddata.csv", header=FALSE)
-annotation<- readRDS("annotations_68k.rds")
-Data_Projection<-as.matrix(Data) %*% as.matrix(Data_Eigen) 
-Data_plot<-as.data.frame(Data_Projection[,1:2])
-write.table(Data_plot,file="dataplot.csv",sep=",",row.names = FALSE,col.names = FALSE)

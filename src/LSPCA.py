@@ -12,7 +12,7 @@ import sys
 # Take the user Input for number of iterations in LSH
 itr = int(sys.argv[1])
 # Take the processed data input from machine
-X = genfromtxt('PreProcesseddata.csv',delimiter=",")   
+X = genfromtxt('data/PreProcesseddata.csv',delimiter=",")   
 print "Read Complete."
 
 # Define Input for parallel jobs running in a batch
@@ -65,7 +65,7 @@ print("Size of Sampled Data",Xnew.shape)
 print("Size of Original  Data",X.shape)
 
 # Save the sampled data in your folder
-numpy.savetxt("datares.csv",Xnew, delimiter=",")
+numpy.savetxt("data/datares.csv",Xnew, delimiter=",")
 
 
 
