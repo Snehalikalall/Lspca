@@ -8,4 +8,10 @@ The user input for number of iterations(k) in LSH is given (5) as default for ex
 
 Preprocess code, Lspca code and main file are there in src file. User can run the demo script with raw data set too.
 
-#Pre-requisites
+## Pre-requisites
+
+R version >= 3.3.2
+
+Python 2.7
+
+Python packages: sklearn, multiprocessing
