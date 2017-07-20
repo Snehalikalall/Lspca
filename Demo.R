@@ -10,10 +10,10 @@
 system("python LSPCA.py 5",intern=T)
 
 # Calling PCA R Code
-source("PCA.R")
+source("src/PCA.R")
 
 # Calling Projection R code
-source("Projection.R")
+source("src/Projection.R")
 
 # Calling Plot Function
-source("plot.R")
+source("src/plot.R")
