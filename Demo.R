@@ -1,11 +1,11 @@
 # Run the demo code, We have given a normalized PBMC data as example Or put the normalized final data here
 
 
-# Load the Raw data to prerprocess in "data" folder. Genes should be in row and Samples should be in coloumn. Gene names must be there.
-Data<- read.csv("data/Rawdata.csv", header=FALSE)
+# Load the Raw data to prerprocess in "data" folder. 
+#Data<- read.csv("data/Rawdata.csv", header=FALSE)
 
 #Calling the Preprocess R code if tehre is Raw dataset
-source("src/PreProcess.R")
+#source("src/PreProcess.R")
 
 
 # Execute the functions
