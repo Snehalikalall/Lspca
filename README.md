@@ -10,8 +10,6 @@ Run  the LSPCA python script directly as a example preprossed data set,which is 
 The user input for number of iterations(k) in LSH is given  **4** as default for example dataset. It can be changed by users depending upon size on datasets. Default is **4** for large datasets, or **2**  for small dataset.
 
 
-PreProcess code is there in src folder. 
-
 Genes should be in row and Samples should be in coloumn in Raw dataset. Gene names must be there in Raw dataset.
 
 ## Pre-requisites
