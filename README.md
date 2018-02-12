@@ -4,13 +4,13 @@
 Unzip the Preprocessed Example dataset.
 
 
-Run  Demo script directly as a example preprossed data set,which is given in data folder.
+Run  the LSPCA python script directly as a example preprossed data set,which is given in data folder.
 
 
-The user input for number of iterations(k) in LSH is given  **5** as default for example dataset. It can be changed by users depending upon size on datasets. Default is **5** for large datasets, or **2**  for small dataset.
+The user input for number of iterations(k) in LSH is given  **4** as default for example dataset. It can be changed by users depending upon size on datasets. Default is **4** for large datasets, or **2**  for small dataset.
 
 
-PreProcess code, Lspca code and Functions code are there in src folder. User can run the demo script with raw data set too.
+PreProcess code is there in src folder. 
 
 Genes should be in row and Samples should be in coloumn in Raw dataset. Gene names must be there in Raw dataset.
 
